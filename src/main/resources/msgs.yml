@@ -1,0 +1,197 @@
+# HybridSMP messages file generated using HybridCore-${project.version}
+# This plugin mainly supports 1.16.5, but may work in later versions
+
+# Main Messages
+prefix: '&c&lHybrid &8»&f'
+no-permission: '%prefix% &oUnknown command.'
+console-error: '&cYou must be a player to execute this command.'
+player-not-found: '%prefix% The player &c%player% &fwas not found.'
+config-reload: '%prefix% The configuration is reloading...'
+404: '%prefix% That alias does &cnot exist&f. For help, type &c/hf help&f.'
+args: '%prefix% You must provide the &ccorrect &famount of arguments.'
+help-1:
+  - '&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*'
+  - '     &bHybrid Core'
+  - '&f * &c/hybridcore &8- &fMain command'
+  - '&f * &c/togglejoin &8- &fToggle your join visibility.'
+  - '&f * &c/toggledeaths &8- &fToggle your deaths visibility.'
+  - '&f '
+  - '&7&o(( &7&oYou do not have &f&oPermission &7&oto view admin cmds ))'
+  - '&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*'
+help-2:
+  - '&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*'
+  - '     &bHybrid Core &7(Admin)'
+  - '&f * &c/hybridcore &8- &fMain command'
+  - '&f * &c/hf reload &8- &fReload all configuration files.'
+  - '&f '
+  - '&7&o(( &f&oView &7&ouser commands with &f&o/hf help &7&o))'
+  - '&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*'
+
+# Core-Cmd
+core-cmd-user:
+  - '%prefix% This server is running &cHybridCore &fby &cCaledonian EH'
+  - '&7&o(( You do not have &f&oPermission &7&oto view further ))'
+core-cmd-admin:
+  - '%prefix% This server is running &cHybridCore v&c%version% &fby &cCaledonian EH'
+  - '&7&o(( Type &f&o/hybridcore help &7&ofor more &f&oInformation ))'
+
+patreon:
+  no-perm: "%prefix% &6&lHEY! &fYou must be a &6Patreon &fsupporter to use this command!\n&7&o(( &f&opatreon.elementalsmp.com &7&o))"
+  status:
+    status: '%status% Your status is set to "%status%"'
+    set: '%prefix% You set your status to "%status%"'
+    error: '%prefix% Your status must be &calphanumerical &fwith a max of &c30 characters&f. '
+
+# Gamemodes
+gamemodes:
+  self: '%prefix% Your gamemode was set to &c%gamemode%&f.' # PLACEHOLDERS: %prefix%, %gamemode%, %player%
+  target: '%prefix% Your gamemode was set to &c%gamemode% &fby &c%player%&f.' # PLACEHOLDERS: %prefix%, %gamemode%, %player%, %target%
+  sender: '%prefix% You set &c%target%''s &fgamemode to &c%gamemode%' # PLACEHOLDERS: %prefix%, %gamemode%, %player%
+  usage: '%prefix% Usage: &c/%command% <player>'
+  names:
+    adventure: 'Adventure'
+    creative: 'Creative'
+    spectator: 'Spectator'
+    survival: 'Survival'
+
+join-leave:
+  join:
+    - '%prefix% &fWelcome &c%player%&f, changes to your base include &cTnT&f, &cExplosions&f, and &clooting&f.'
+    - '%prefix% &fWelcome &c%player%&f, you brought the pizza right?'
+    - '%prefix% &c%player%&f just joined, everyone, look like your doing something important.'
+    - '%prefix% &c%player%&f joined the server, hide the weapons.'
+    - '%prefix% &fCannonball! &c%player% &fjust crashed this party.'
+  leave:
+    - '%prefix% Goodbye &c%player%&f, your loot is currently getting &c&nstolen&r&c ☺'
+    - '%prefix% &fGoodbye &c%player%&f, did you remember to lock the vault?'
+    - '%prefix% &c%player% &fwas a traitor to the &cSoviet Union&f.'
+
+# Staff
+staffchat:
+  format: '&8(&c&lS&f&lC&8) &7&o(%server%) &c%player% &8» &f'
+  discord: ''
+  args:
+    enable: '%prefix% Your staffchat is now &cEnabled&f.'
+    disable: '%prefix% Your staffchat is now &cDisabled&f.'
+    usage: '%prefix% Incorrect usage. Use &c/sc <help | enable | disable>'
+  help:
+    - '&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*'
+    - '&c        Staff-Chat Help &7(Page 1/1)'
+    - '&f '
+    - '&f * &c/staffchat  &8● &fToggle staff chat'
+    - '&f * &c/sc enable &8● &fForce enable staff chat'
+    - '&f * &c/sc disable &8● &fForce disable staff chat'
+    - '&f * &c/sc help &8● &fView this help menu'
+    - '&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*'
+
+stafflist:
+  format:
+    header:
+      - '&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*'
+      - '&c        &lStaff List'
+      - '&f '
+    footer:
+      - '&f '
+      - '&7&o(( &f&oHover &7&ooer staff for more &f&oinformation &7&o))'
+      - '&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*'
+    empty: '%prefix% There are no staff online.'
+  staff: '&f * &c%player% &fis logged on &c%server%'
+  toggles:
+    hide: '%prefix% You will &cNo Longer &fappear on stafflist.'
+    show: '%prefix% You will &cAppear &fon the stafflist.'
+  hide: '%prefix% You &c%status% &fyourself from the &cStafflist&f.'
+
+list:
+  - '&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*'
+  - '          &c&lPlayer List &8(&f&oGlobal&8)'
+  - '&f '
+  - '&f * &c&lStaff&8: &f%staff%'
+  - '&f * &c&lFriend&8: &f%special%'
+  - '&f * &c&lNon&8: &f%default%'
+  - '&f '
+  - '&f * &c&lTotal&8: &f%total%'
+  - '&f '
+  - '&7&o(( Feel free to &f&omessage &7&oanyone on &f&o/staff &7&o))'
+  - '&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*'
+
+vanish:
+  self: '%prefix% You &c%status% &fyour vanish mode.'
+  other: '%prefix% You &c%status% &c%player%''s &fvanish mode.'
+  action-bar: '&c&l(!) &cYou are currently &nVanished&r'
+  usage:
+    help:
+      - '&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*'
+      - '&c        Vanish Help &7(Page 1/1)'
+      - '&f '
+      - '&f * &c/vanish  &8● &fToggle vanish'
+      - '&f * &c/v enable &8● &fForce enable vanish'
+      - '&f * &c/v disable &8● &fForce disable vanish'
+      - '&f * &c/v help &8● &fView this help menu'
+      - '&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*'
+    usage: '%prefix% Incorrect usage. Use &c/v <help|enable|disable>'
+
+chat:
+  usage:
+    - '&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*'
+    - '&c        Chat Help &7(Page 1/1)'
+    - '&f '
+    - '&f * &c/chat toggle  &8● &fToggle chat'
+    - '&f * &c/chat slow <time>  &8● &fAdd a chat slowdown'
+    - '&f * &c/chat clear  &8● &fClear the chat'
+    - '&f * &c/chat cmd <time>  &8● &fAdd a cmd cooldown.'
+    - '&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*'
+  toggle: "&f \n&f&l✩&c&l✩ &f&lSTAFF HAVE &c&l%status% CHAT &f&l✩&c&l✩\n&f "
+  slow: '%prefix% The chat has been slowed to &c%time% seconds&f.'
+  cmd: '%prefix% You have slowed commands to &c%time% seconds&f.'
+  clear: '&f&l✩&c&l✩ &f&lSTAFF HAVE &c&lCLEARED CHAT &f&l✩&c&l✩'
+  chat-disabled: '%prefix%  Chat is currently disabled. Only &cStaff &fcan speak.'
+  blocked-msg: '%prefix% &c&lHEY! &fYour message contains &c%word%&f, which is blocked!'
+  globalchat: '%prefix% You &c%status% &fthe visibility of global chat.'
+
+testkb:
+  usage: '%prefix% Incorrect usage. Use &c/testkb <player>'
+  start: '%prefix% Starting knockback test on &c%player%&f. They should move forward.'
+  end: '%prefix% Knockback test for &c%player% &fcomplete. They have been teleported to their &6origional &fposition.'
+
+# Reactions
+reactions:
+  bruh: '&8(&d&lBruh&8) &d%player% &fhas declared this as a &dBruh &fmoment.'
+  burnt-ketchup: '&8(&4&lBurnt&8) &4%player% &fhas burnt the &4&nketchup&r&f.'
+  doubt: '&8(&6&lBoubt&8) &6%player% &fdoubts that.'
+  epic-gamer-moment: '&8(#078ab6%player%&8) &fNow that''s an #078ab6&lEPIC GAMER MOMENT&f.'
+  good-game: '&8(&e&lGG&8) &e%player% &fhas declared this as a &e&nGood Game&r&f.'
+  no-f: '&8(&c&l&mRespects&r&8) &c%player% &fhas refused to pay their respects. Stop dying people.'
+  f: '&8(&a&lRespects&8) &a%player% &fhas just paid their respects.'
+  rip: '&8(&7&l☠&8) &c%player% &frequests you to rest in peace.'
+  sleep: '&8(&b&lSleep&8) &b%player% &fhas requested someone to sleep.'
+  swamp: '&8(&2&lSwamp&8) &2%player% &fis kindly asking you to &2&lGET OUTTA MY SWAMP.'
+  ugly: '&8(&4&lUGLY&8) &c%player% &fhas declared this to be &4&l&nUGLY!!!&r&f.'
+
+demo:
+  usage: '&c&lHybrid &8» &fUsage: &c/demotroll <player>'
+  action: '&c&lHybrid &8» &fSent the demo troll to &c%player%'
+
+logs:
+  gamemode:
+    self: '%prefix% &c%player% &fjust set their &c&nown&r&f gamemode to &c%gamemode%&f.'
+    other: '%prefix% &c%player &fjust set &c%target%''s &fgamemode to &c%gamemode%&f.'
+  fly:
+    self: '%prefix% &c%player% &fjust %status% &cFly &ffor themself.'
+    other: '%prefix% &c%player% &fjust %status% &c%target%''s &ffly.'
+  height: '%prefix% &c%player% &fjust attempted to fly above &cy%height% &fbut was blocked.'
+  block: '%prefix% &c%player% &ftried to place the block &c%block% &fbut was denied.'
+  vanish:
+    self: '%prefix% &c%player% &fjust %status% their &cVanish &fmode.'
+    other: '%prefix% &c%player% &fjust %status% &c%target%''s Vanish&f.'
+  staff-hide: '%prefix% &c%player% &fjust &c%status%&f themself from &cStafflist&f.'
+  command-spy: '&8(&c%server%&8) &c%player%&8: &f%command%'
+  blocked-word: "%prefix% &c%player% &ftried to chat using a blocked word.\n&f* &cOriginal (Highlighted): &f%msg%"
+
+names:
+  enabled: 'enabled'
+  disabled: 'disabled'
+  hid: 'hid'
+  showed: 'showed'
+
+other:
+  cords: '%prefix% &c%player% &fis currently at &cx%x%&f, &cy,%y%&f, &cz%z%&f.'

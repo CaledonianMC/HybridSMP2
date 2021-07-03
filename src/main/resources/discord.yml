@@ -1,0 +1,221 @@
+# HybridSMP discord file generated using HybridCore-${project.version}
+# This plugin mainly supports 1.16.5, but may work in later versions
+
+setup:
+  bot-token: '' # Make an application on https://discord.com/developers/applications
+  status: ONLINE
+  activity: '%num% players' # Watching <activity>
+
+channels:
+  development: '' # Leave empty
+  log-general: ''
+  log-status: ''
+  log-staff: ''
+  server-chat: ''
+
+# Sever Chat
+chat:
+  format:
+    color:
+      red: 254
+      green: 254
+      blue: 254
+    author:
+      message: '%player%'
+      image: 'https://cravatar.eu/avatar/%player%/64.png'
+staff-chat:
+  format:
+    color:
+      red: 254
+      green: 254
+      blue: 254
+    author:
+      message: '%player% (Staff Chat)'
+      image: 'https://cravatar.eu/avatar/%player%/64.png'
+join:
+  color:
+    red: 33
+    green: 222
+    blue: 62
+    author:
+      message: 'Player Joined'
+      image: 'https://i.imgur.com/IRmeKNG.png'
+    player:
+      title: 'Player'
+      info: '%player%'
+    server:
+      title: 'Server'
+      info: '%server%'
+    footer:
+      message: 'HybridSync - Developed by Caledonian EH'
+      image: 'https://i.imgur.com/IRmeKNG.png'
+    thumbnail: 'https://cravatar.eu/helmhead/%player%/128.png'
+leave:
+  color:
+    red: 253
+    green: 70
+    blue: 70
+    author:
+      message: 'Player Left'
+      image: 'https://i.imgur.com/IRmeKNG.png'
+    player:
+      title: 'Player'
+      info: '%player%'
+    server:
+      title: 'Server'
+      info: '%server%'
+    footer:
+      message: 'HybridSync - Developed by Caledonian EH'
+      image: 'https://i.imgur.com/IRmeKNG.png'
+    thumbnail: 'https://cravatar.eu/helmhead/%player%/128.png'
+death:
+  color:
+    red: 253
+    green: 196
+    blue: 68
+    author:
+      message: 'Player Death'
+      image: 'https://i.imgur.com/IRmeKNG.png'
+    player:
+      title: 'Player'
+      info: '%player%'
+    server:
+      title: 'Server'
+      info: '%server%'
+    reason:
+      title: 'Reason'
+      info: '%reason%'
+    footer:
+      message: 'HybridSync - Developed by Caledonian EH'
+      image: 'https://i.imgur.com/IRmeKNG.png'
+    thumbnail: 'https://cravatar.eu/helmhead/%player%/128.png'
+
+
+
+# Logs
+status:
+  online:
+    color:
+      red: 33
+      green: 222
+      blue: 62
+    author:
+      message: 'Server Status Alert'
+      image: 'https://i.imgur.com/IRmeKNG.png'
+    server:
+      title: 'Server'
+      info: '%server%'
+    status:
+      title: 'Status'
+      info: 'Online'
+    footer:
+      message: 'HybridSync - Developed by Caledonian EH'
+      image: 'https://i.imgur.com/IRmeKNG.png'
+  offline:
+    color:
+      red: 253
+      green: 70
+      blue: 70
+    author:
+      message: 'Server Status Alert'
+      image: 'https://i.imgur.com/IRmeKNG.png'
+    server:
+      title: 'Server'
+      info: '%server%'
+    status:
+      title: 'Status'
+      info: 'Offline'
+    footer:
+      message: 'HybridSync - Developed by Caledonian EH'
+      image: 'https://i.imgur.com/IRmeKNG.png'
+gamemode:
+  self:
+    color:
+      red: 70
+      green: 163
+      blue: 235
+    author:
+      message: 'Player Gamemode Alert'
+      image: 'https://i.imgur.com/IRmeKNG.png'
+    executor:
+      title: 'Executor'
+      info: '%player%'
+    gamemode:
+      title: 'Gamemode'
+      info: '%gamemode%'
+    server:
+      title: 'Server'
+      info: '%server%'
+    footer:
+      message: 'HybridSync - Developed by Caledonian EH'
+      image: 'https://i.imgur.com/IRmeKNG.png'
+  other:
+    color:
+      red: 70
+      green: 163
+      blue: 235
+    author:
+      message: 'Player Gamemode Alert'
+      image: 'https://i.imgur.com/IRmeKNG.png'
+    executor:
+      title: 'Executor'
+      info: '%player%'
+    target:
+      title: 'Target'
+      info: '%target%'
+    gamemode:
+      title: 'Gamemode'
+      info: '%gamemode%'
+    server:
+      title: 'Server'
+      info: '%server%'
+    footer:
+      message: 'HybridSync - Developed by Caledonian EH'
+      image: 'https://i.imgur.com/IRmeKNG.png'
+
+# Vanish
+vanish:
+  color:
+    red: 70
+    green: 163
+    blue: 253
+  author:
+    message: 'Player Vanish Alert'
+    image: 'https://i.imgur.com/IRmeKNG.png'
+  server:
+    title: 'Server'
+    info: '%server%'
+  status:
+    title: 'Status'
+    info: '%status%'
+  player:
+    title: 'Player'
+    info: '%player%'
+  target:
+    title: 'Target'
+    info: '%target%'
+  footer:
+    message: 'HybridSync - Developed by Caledonian EH'
+    image: 'https://i.imgur.com/IRmeKNG.png'
+
+# Online
+online:
+  color:
+    red: 254
+    green: 254
+    blue: 254
+  author:
+    message: 'Players Online'
+    image: 'https://i.imgur.com/IRmeKNG.png'
+  server:
+    title: 'Server'
+    info: '%server%'
+  total:
+    title: 'Total'
+    info: '%online%'
+  players:
+    title: 'Players'
+    info: '%players%'
+  footer:
+    message: 'HybridSync - Developed by Caledonian EH'
+    image: 'https://i.imgur.com/IRmeKNG.png'

@@ -1,0 +1,48 @@
+# HybridSMP configuration file generated using HybridCore-${project.version}
+# This plugin mainly supports 1.16.5, but may work in later versions
+
+# Core
+server-name: 'TEST'
+update-alert: true
+enable-core-cmd: true
+log-cooldown: 15
+resourcepack: 'https://www.googleapis.com/drive/v3/files/1Nq2Aj5MPrRUIA2FX5QXmHSmycBtRe-Z-?alt=media&key=AIzaSyD8hXWRkItE6IH0vcvACXYrnLbvAjV1tzc'
+
+chat-formatting:
+  enable: true
+  format: '%luckperms_prefix% %player% %luckperms_suffix% &8» &f' # PLACEHOLDERS: %player%, %displayname%
+  discord: '&8(&c&lDis&f&lcord&8) &c%user% &8» &f%message%'
+  hover: "&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*\n&c        Information\n&f * &cReal Name&8: &f%player%\n&f * &cPrefix&8: &f%luckperms_prefix%\n&f * &cRank&8: &f%luckperms_rank%\n&f * &cVersion&8: &f%version%\n&f \n&7&o(( &f&oClick &7&oto send a &f&omessage &7&o))\n&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*"
+  click:
+    command: '/msg %player%' # Anything that uses the action
+
+staff:
+  staffchat: true
+  stafflist:
+    enabled: true
+    events:
+      hover: "&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*\n&c        Information\n&f * &cReal Name&8: &f%player%\n&f * &cPrefix&8: &f%luckperms_prefix%\n&f * &cRank&8: &f%luckperms_rank%\n&f * &cVersion&8: &f%version%\n&f \n&7&o(( &f&oClick &7&oto send a &f&omessage &7&o))\n&c*&8&m-----------&c*&8&m------------------&c*&8&m-----------&c*"
+      click: '/msg %player% '
+  vanish: true
+
+patches:
+  height-limit:
+    enable: true
+    max-height: 300
+    bypass: 'hybridcore.height.bypass'
+    deny: '%prefix% You cannot fly higher than &c%height% &fblocks.'
+    msg-cooldown: 1
+
+other:
+  creeper-explosions:
+    enable: true
+    deal-damage: true
+  block-end: true
+
+placeholders:
+  version-logo:
+    java: '\uE000'
+    bedrock: '\uE001'
+  version:
+    java: 'Java'
+    bedrock: 'Bedrock'

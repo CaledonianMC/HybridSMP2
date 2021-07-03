@@ -1,0 +1,56 @@
+name: HybridSMP
+version: ${project.version}
+main: me.caledonian.hybridsmpv2.HybridSMPv2
+api-version: 1.16
+authors: [ Caledonian ]
+softdepend:
+  - PlaceholderAPI
+commands:
+  # Reactions
+  bruh:
+    aliases: [ bruhmoment ]
+  burn:
+    aliases: [ burnt, burntketchup ]
+  doubt:
+  epic:
+    aliases: [ epicgamer ]
+  f:
+    aliases: [ payrespects, fmoment ]
+  gg:
+    aliases: [ goodgame ]
+  nf:
+    aliases: [ norespects ]
+  rip:
+  sleep:
+  swamp:
+  ugly:
+
+  # Player
+  list:
+  globalchat:
+    aliases: [togglechat]
+  coords:
+
+  # Staff
+  vanish:
+    aliases: [v, van]
+  staff:
+    aliases: [stafflist, staffs]
+  chat:
+  staffchat:
+    aliases: [sc, staffc]
+  testkb:
+  demotroll:
+
+  # Gamemode
+  gmc:
+    aliases: [gamemodec, 1, gm1, creative, c]
+  gms:
+    aliases: [gamemodes, 0, gm0, survival, s]
+  gma:
+    aliases: [gamemodea, 2, gm2, adventure, a]
+  gmsp:
+    aliases: [gamemodesp, 3, gm3, spectator, sp]
+
+  # Pateron
+  status:

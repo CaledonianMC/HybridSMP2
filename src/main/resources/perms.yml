@@ -1,0 +1,63 @@
+# HybridSMP permission file generated using HybridCore-${project.version}
+# This plugin mainly supports 1.16.5, but may work in later versions
+
+# Core Permissions
+core-cmd: 'hybridcore.corecmd'
+reload: 'hybridcore.reload'
+staff: 'hybridcore.staff'
+update: 'hybridcore.update'
+
+ranks:
+  special: 'hybridcore.ranks.special'
+
+patreon:
+  status: 'hybridcore.patreon.status'
+  glow: 'hybridcore.patreon.glow'
+  namecolor: 'hybridcore.patreon.namecolor'
+  particles: 'hybridcore.patreon.particles'
+
+# Gamemodes
+adventure:
+  self: 'hybridcore.adventure.self'
+  other: 'hybridcore.adventure.other'
+creative:
+  self: 'hybridcore.creative.self'
+  other: 'hybridcore.creative.other'
+spectator:
+  self: 'hybridcore.spectator.self'
+  other: 'hybridcore.spectator.other'
+survival:
+  self: 'hybridcore.survival.self'
+  other: 'hybridcore.survival.other'
+
+admin:
+  staffchat: 'hybridcore.staffchat'
+  stafflist: 'hybridcore.stafflist'
+  chat: 'hybridcore.chat'
+  bypass-chat: 'hybridcore.chat.bypass'
+  testkb: 'hybridcore.staff.testkb'
+  demo: 'hybridcore.demo'
+  vanish:
+    self: 'hybridcore.vanish.self'
+    other: 'hybridcore.vanish.other'
+    see: 'hybridcore.vanish.see'
+  command-spy: 'hybridcore.spy.command'
+  command-spy-bypass: 'hybridcore.spy.command.bypass'
+
+# Other
+other:
+  join: 'hybridcore.join'
+  leave: 'hybridcore.leave'
+
+# Cheats
+broadcast: 'hybridcore.broadcast'
+
+logs:
+  gamemode: 'hybridcore.logs.gamemode'
+  fly: 'hybridcore.logs.fly'
+  height: 'hybridcore.logs.height'
+  block: 'hybridcore.logs.block'
+  vanish: 'hybridcore.logs.vanish'
+  staff-hide: 'hybridcore.logs.staffhide'
+  command-spy: 'hybridcore.spy.command'
+  blocked-word: 'hybridcore.spy.blocked'
